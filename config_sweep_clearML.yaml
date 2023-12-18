@@ -13,10 +13,3 @@ parameters:
         values: [0.0001]
     aug:
         values: [False]
-
-
-    task = Task.create(project_name='clearLM_sweep'
-                    ,task_name='Pytorch cifar base'
-                    ,add_task_init_call=True
-                    ,script="/Work30/kitagawatomoki/pytorch_cifar10/base_template_cifar10.py"
-                    )
