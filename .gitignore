@@ -2,3 +2,4 @@
 *experiment*
 *.png
 *.jpeg
+__pycache__
