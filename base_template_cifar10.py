@@ -26,7 +26,9 @@ def main():
                     ,task_name='Pytorch cifar base'
                     ,auto_connect_arg_parser=False
                     ,auto_connect_frameworks={'pytorch':False})
-    task.set_script(working_dir="/Work30/kitagawatomoki/pytorch_cifar10"
+    task.set_script(repository="git@github.com:kitagawatomoki/clearML_pytorch.git",
+                    branch='main'
+                    ,working_dir="/Work30/kitagawatomoki/pytorch_cifar10"
                     ,entry_point="base_template_cifar10.py")
 
     config = {"device":device
